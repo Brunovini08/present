@@ -17,7 +17,7 @@ export default function Present() {
         partnerName: 'Ana',
         message: 
         'Obrigado por esse primeiro ano de relacionamento meu amooor, obrigado por cada momento, cada abraço, cada beijo, você é a pessoa mais incrível e especial na minha vidaaa, eu te amooooooo mil milhões meu amoooor 💖',
-        youtubeUrl: 'https://www.youtube.com/watch?v=kPa7bsKwL-c',
+        youtubeUrl: 'kPa7bsKwL-c',
         startDate: '2023-11-14',
     }
 
@@ -32,7 +32,6 @@ export default function Present() {
 
     const [selectedImage, setSelectedImage] = useState<any>(images[0])
 
-    const videoId = formData.youtubeUrl.split('watch?v=')[1]
 
     useEffect(() => {
         if (formData.youtubeUrl && formData.youtubeUrl.includes('watch?v=')) {
